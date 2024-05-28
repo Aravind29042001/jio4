@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "swiper/css";
+@import "swiper/css/navigation";
+
+.img12{
+    position: relative;
+    top: 80px;
+   
+}
+
+
+
+.img {
+    
+    width: 200px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: transform 0.3s ease; 
+}
+
+.img:hover {
+    
+    transform: scale(1.1); 
+    
+}
+
+
