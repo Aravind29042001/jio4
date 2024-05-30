@@ -1,17 +1,14 @@
+/* Existing CSS */
 @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 @import "swiper/css";
 @import "swiper/css/navigation";
 
-.img12{
+.img12 {
     position: relative;
     top: 80px;
-   
 }
 
-
-
 .img {
-    
     width: 200px;
     height: 230px;
     object-fit: cover;
@@ -21,9 +18,59 @@
 }
 
 .img:hover {
-    
     transform: scale(1.1); 
+}
+
+.swiper-button-next {
+    width: 30px; 
+    height: 230px;position: absolute;
+    top: 22px;
+    right: -1px;
+    background-size: 60px 60px; 
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-prev{
+    margin-left: -10px;
+    width: 30px; 
+    
+    height: 230px;
+    position: absolute;
+    top: 22px;
+    background-size: 60px 60px; 
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px; 
+    font-weight: bolder;
+}
+
+/* Add hover effect */
+.swiper-button-next:hover
+{
+    color: white;
+    box-shadow: inset -40px 0 22px -30px rgba(0,0,0,1);
+
     
 }
 
+.swiper-button-prev:hover {
+    box-shadow: inset 40px 0 22px -30px rgba(0,0,0,1);
 
+}
+
+/* .swiper-button-next::before,
+.swiper-button-prev::before {
+    content: '';
+    position: absolute;
+    width: 100px; 
+    height: 100px;
+    top: -35px; 
+    left: -35px;
+    z-index: -1;
+    pointer-events: none; 
+} */
